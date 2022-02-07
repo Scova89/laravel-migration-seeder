@@ -15,9 +15,9 @@ class CreateToursTable extends Migration
     {
         Schema::create('tours', function (Blueprint $table) {
             $table->id();
-            $table->string("name", 100);
-            $table->string("country", 100);
-            $table->string("city", 100);
+            $table->string("name", 150);
+            $table->string("country", 150);
+            $table->string("city", 150);
             $table->text("description")->nullable();
             $table->tinyInteger("people");
             $table->boolean("fly_included")->default(true);
